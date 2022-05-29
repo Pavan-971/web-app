@@ -17,7 +17,7 @@ pipeline {
         }
         stage("build") {
             steps {
-                dir("/var/lib/jenkins/workspace/prj-dum/bb") {
+                dir("/tmp/prj-dum/bb") {
                     sh '''
                     mvn clean
                     mvn package
