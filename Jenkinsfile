@@ -7,12 +7,15 @@ pipeline {
     stages {
         stage("checkoutccggvvvv") {
             steps {
-             git url: 'https://github.com/Pavan-971/web-app.git', branch: 'test', credentialsId: '58cfcb37-f62f-4e01-8040-62a5c6ada73b'
+             git url: 'https://github.com/Pavan-971/web-app.git', branch: 'dev', credentialsId: '58cfcb37-f62f-4e01-8040-62a5c6ada73b'
                 
                
             }
         }
         stage("Intialization") {
+            when {
+                branch 'dev'
+            }
             steps {
                 sh '''    
                 echo "PATH = ${PATH}"
