@@ -5,7 +5,7 @@ pipeline {
         maven "Maven"
     }
     stages {
-        stage("checkoutcsc") {
+        stage("checkoutcc") {
             steps {
              git url: 'https://github.com/Pavan-971/web-app.git', branch: 'test', credentialsId: '58cfcb37-f62f-4e01-8040-62a5c6ada73b'
                 
