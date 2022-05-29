@@ -1,7 +1,7 @@
 public class Application {
 
     public static void main(String[] args) {
-      System.out.println("jokfff hhfh");
+      System.out.println("pokiri eddava");
     }
 }
 
