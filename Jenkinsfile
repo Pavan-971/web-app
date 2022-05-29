@@ -18,7 +18,9 @@ pipeline {
         stage("build") {
             steps {
                 sh '''
+                mvn clean
                 mvn package
+                java -jar target/adder-1.0.0.jar
                 '''
             }
         }
