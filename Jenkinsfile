@@ -8,6 +8,8 @@ pipeline {
         stage("checkoutsc") {
             steps {
              git branch: 'dev', credentialsId: '58cfcb37-f62f-4e01-8040-62a5c6ada73b',  url: "https://github.com/Pavan-971/web-app.git"
+             git url: 'https://github.com/naiveskill/devops_cred.git', branch: 'main',
+                 credentialsId: 'github_creds'
                 
                
             }
