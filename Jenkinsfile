@@ -5,7 +5,7 @@ pipeline {
         maven "Maven"
     }
     stages {
-        stage("checvvvvvkobu") {
+        stage("checbbvvvvvkobu") {
             steps {
              git url: 'https://github.com/Pavan-971/web-app.git', branch: 'dev', credentialsId: '58cfcb37-f62f-4e01-8040-62a5c6ada73b'
                 
