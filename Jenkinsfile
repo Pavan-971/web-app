@@ -14,7 +14,7 @@ pipeline {
         }
         stage("Intialization") {
             when {
-                branch 'dev'
+                branch 'test'
             }
             steps {
                 sh '''    
